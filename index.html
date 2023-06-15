@@ -53,18 +53,18 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#Acerca_de_mi"
                   >Acerca de mí</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Proyectos</a>
+                <a class="nav-link" href="#Proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experiencia</a>
+                <a class="nav-link" href="#Experiencia">Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Contacto</a>
+                <a class="nav-link" href="#Contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -92,7 +92,7 @@
     </section>
 
     <!-- Container sección acerca de mi -->
-    <section class="acerca-de-mi text-center my-5">
+    <section id="Acerca_de_mi" class="acerca-de-mi text-center my-5">
       <!-- título acerca de mi -->
       <h2 class="display-3 fw-bold my-4">Acerca de mi</h2>
       <!-- bajada de título acerca de mi -->
@@ -136,7 +136,7 @@
     </section>
 
     <!-- sección mis proyectos -->
-    <section class="mis-proyectos my-5 p-5 bg-secondary">
+    <section id="Proyectos" class="mis-proyectos my-5 p-5 bg-secondary">
       <h2 class="display-4 fw-bold text-center text-light mb-3">
         Mis proyectos
       </h2>
@@ -212,20 +212,50 @@
       </div>
     </section>
     <!-- Sección mi experiencia -->
-    <section class="experiencia">
+    <section id="Experiencia" class="experiencia">
         <h4 class="display-3 fw-bold my-4 text-center">Mi experiencia</h4>
         <div class="img-exp row row-cols-auto text-info mb-3 justify-content-center pb-2">
             <ul class="list-group list-group-horizontal">
                 <li class="list-group-item"><i class="fa-brands fa-html5 fa-4x"></i></li>
                 <li class="list-group-item"><i class="fa-brands fa-css3-alt fa-4x pb-2"></i></li>
                 <li class="list-group-item"><i class="fa-brands fa-bootstrap fa-4x pb-2"></i></li>
+                <li class="list-group-item"><i class="fa-brands fa-github fa-4x pb-2"></i></li>
               </ul>
-            
-            
-
-        </div>
+         </div>
     </section>
-    
+    <section id="Contacto" class="container my-5 bg-secondary">
+      <h2 class="display-4 fw-bolder text-center text-light my-4">Contáctame</h2>
+
+      <p class="text-center my-4 d-none d-md-block">
+        Para agendar una cita u obtener mas información, registre sus datos para
+        estar en contacto.
+      </p>
+
+      <form>
+        <div class="form-group mb-4">
+          <label class="mb-2">Nombre</label>
+          <input class="form-control" placeholder="Nombre" />
+        </div>
+
+        <div class="form-group mb-4">
+          <label class="mb-2">Correo electrónico</label>
+          <input class="form-control" placeholder="Correo electrónico" />
+        </div>
+
+        <div class="form-group">
+          <label class="mb-2">Mensaje</label>
+          <textarea
+            class="form-control"
+            placeholder="Escribe aquí tu mensaje"
+          ></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center p-3">
+          <button class="btn btn-info text-light">Enviar</button>
+        </div>
+      </form>
+    </section>
+
 
 
     <!-- FOOTER -->
